@@ -1,5 +1,7 @@
 # MobilePay Campaign – Landing de pagos móviles (proyecto simulado)
 
+![Captura de la landing MobilePay Campaign](./screenshot-mobilepay-hero-desktop.png)
+
 MobilePay Campaign es la landing de una plataforma ficticia de pagos móviles pensada para equipos de marketing y producto.  
 La he creado como ejemplo de **diseño frontend moderno**, responsive y centrado en campañas digitales con operadores móviles.
 
@@ -9,7 +11,7 @@ La he creado como ejemplo de **diseño frontend moderno**, responsive y centrado
 
 ## Demo
 
-(Actualiza este enlace cuando actives GitHub Pages)
+Puedes ver la landing desplegada aquí:
 
 https://ign4fer.github.io/mobilepay-campaign-landing/
 
@@ -109,3 +111,4 @@ cd mobilepay-campaign-landing
 
 # Abrir index.html en el navegador
 # (doble clic o usando un servidor estático tipo Live Server de VS Code)
+

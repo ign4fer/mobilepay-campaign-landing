@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MobilePay Campaign - Pagos móviles para campañas de marketing</title>
+    <meta name="description" content="MobilePay Campaign, ejemplo de plataforma de pagos móviles pensada para equipos de marketing.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Top bar -->
+    <div class="top-bar">
+        <div class="container top-bar-content">
+            <p>Plataforma ficticia de pagos móviles. Esta web muestra un ejemplo de diseño y maquetación
+                    para un proyecto simulado orientado a equipos de marketing y producto.</p>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container nav-container">
+            <a href="#hero" class="logo">
+                <span class="logo-mark">MP</span>
+                <span class="logo-text">MobilePay<br>Campaign</span>
+            </a>
+
+            <button class="nav-toggle" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="main-nav">
+                <span class="nav-toggle-line"></span>
+                <span class="nav-toggle-line"></span>
+                <span class="nav-toggle-line"></span>
+            </button>
+
+            <nav class="main-nav" id="main-nav">
+                <ul class="nav-links">
+                    <li><a href="#beneficios">Beneficios</a></li>
+                    <li><a href="#como-funciona">Cómo funciona</a></li>
+                    <li><a href="#casos-uso">Casos de uso</a></li>
+                    <li><a href="#para-marketing">Para marketing</a></li>
+                    <li><a href="#testimonios">Testimonios</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <!-- CTA dentro del menú SOLO en móvil -->
+                    <li class="nav-links-cta">
+                        <a href="#contacto" class="btn btn-primary btn-nav-mobile">Solicitar demo</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- CTA solo escritorio -->
+            <a href="#contacto" class="btn btn-primary btn-nav">Solicitar demo</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero -->
+        <section id="hero" class="hero">
+            <div class="container hero-grid">
+                <div class="hero-content reveal">
+                    <h1>Pagos móviles pensados para tus campañas de marketing</h1>
+                    <p class="hero-subtitle">
+                        Crea, lanza y analiza campañas de pagos móviles y facturación con operadora desde un único panel
+                        diseñado para equipos de marketing, no para ingenieros.
+                    </p>
+                    <p class="hero-disclaimer">
+                        Esta página forma parte de un proyecto simulado de plataforma de pagos móviles, creada para mostrar diseño y desarrollo frontend.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#contacto" class="btn btn-primary">Solicitar demo</a>
+                        <a href="#como-funciona" class="btn btn-secondary">Ver cómo funciona</a>
+                    </div>
+                    <ul class="hero-highlights">
+                        <li>Integración con operadoras en varios países.</li>
+                        <li>Panel en tiempo real para campañas y KPIs.</li>
+                        <li>Soporte cercano para equipos de marketing.</li>
+                    </ul>
+                </div>
+                <div class="hero-visual reveal">
+                    <div class="mockup-card">
+                        <div class="mockup-header">
+                            <span class="mockup-dot"></span>
+                            <span class="mockup-dot"></span>
+                            <span class="mockup-dot"></span>
+                        </div>
+                        <div class="mockup-body">
+                            <h2>Panel de campaña</h2>
+                            <div class="mockup-metrics">
+                                <div class="metric">
+                                    <span class="metric-label">Conversiones</span>
+                                    <span class="metric-value js-counter" data-target="4.2" data-suffix="%" data-decimals="1">0%</span>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-label">Ingresos</span>
+                                    <span class="metric-value js-counter" data-target="32.4" data-suffix="K€" data-decimals="1">0K€</span>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-label">Países activos</span>
+                                    <span class="metric-value js-counter" data-target="7" data-suffix="" data-decimals="0">0</span>
+                                </div>
+                            </div>
+                            <div class="mockup-chart">
+                                <div class="chart-bar"></div>
+                                <div class="chart-bar"></div>
+                                <div class="chart-bar"></div>
+                                <div class="chart-bar"></div>
+                                <div class="chart-bar"></div>
+                            </div>
+                            <p class="mockup-caption">Pagos móviles en tiempo real por campaña y país.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Franja de confianza -->
+        <section id="confianza" class="trust-strip">
+            <div class="container trust-content">
+                <p class="trust-title">Conectado con los principales operadores y marcas digitales</p>
+                <div class="trust-logos">
+                    <span class="trust-logo reveal">TeleWorld</span>
+                    <span class="trust-logo reveal">GlobalCarrier</span>
+                    <span class="trust-logo reveal">StreamPlus</span>
+                    <span class="trust-logo reveal">PlayZone</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Beneficios -->
+        <section id="beneficios" class="section">
+            <div class="container">
+                <header class="section-header">
+                    <h2>Beneficios para tu negocio</h2>
+                    <p>Todo lo que necesitas para lanzar campañas de pagos móviles sin fricción técnica.</p>
+                </header>
+                <div class="grid-3 benefits-grid">
+                    <article class="card reveal">
+                        <h3>Integración rápida con operadoras</h3>
+                        <p>
+                            Aprovecha conexiones ya disponibles con múltiples operadoras. Sin proyectos eternos,
+                            sin negociaciones técnicas interminables.
+                        </p>
+                    </article>
+                    <article class="card reveal">
+                        <h3>Panel pensado para marketing</h3>
+                        <p>
+                            Crea campañas, define flujos de pago y revisa resultados desde una interfaz clara,
+                            sin depender del equipo técnico para cada cambio.
+                        </p>
+                    </article>
+                    <article class="card reveal">
+                        <h3>Pagos seguros y cumplimiento</h3>
+                        <p>
+                            Cumplimiento normativo y mejores prácticas de seguridad integradas de serie,
+                            para que puedas centrarte en la campaña, no en la regulación.
+                        </p>
+                    </article>
+                    <article class="card reveal">
+                        <h3>Analítica en tiempo real</h3>
+                        <p>
+                            Monitoriza ingresos, conversiones y comportamiento por país, operadora o campaña,
+                            con métricas actualizadas al momento.
+                        </p>
+                    </article>
+                    <article class="card reveal">
+                        <h3>Escalable por mercados</h3>
+                        <p>
+                            Empieza con uno o dos países y amplía progresivamente tu cobertura sin rehacer integraciones.
+                        </p>
+                    </article>
+                    <article class="card reveal">
+                        <h3>Soporte cercano</h3>
+                        <p>
+                            Equipo especializado que entiende tanto de pagos como de marketing
+                            para ayudarte a sacar el máximo rendimiento a tus campañas.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cómo funciona -->
+        <section id="como-funciona" class="section section-alt">
+            <div class="container">
+                <header class="section-header">
+                    <h2>Cómo funciona MobilePay Campaign</h2>
+                    <p>Un flujo sencillo, diseñado para que puedas lanzar campañas sin bloquear al equipo técnico.</p>
+                </header>
+                <div class="steps-grid">
+                    <article class="card step-card reveal">
+                        <div class="step-number">1</div>
+                        <h3>Configura tu campaña</h3>
+                        <p>
+                            Define el país, operador, tipo de servicio, precio y mensaje comercial.
+                            Previsualiza el flujo de alta y pago antes de lanzar.
+                        </p>
+                    </article>
+                    <article class="card step-card reveal">
+                        <div class="step-number">2</div>
+                        <h3>Lanza el flujo de pagos móviles</h3>
+                        <p>
+                            Activa la campaña y conecta el flujo de pago con tus activos digitales:
+                            landings, apps, SMS, códigos QR o banners.
+                        </p>
+                    </article>
+                    <article class="card step-card reveal">
+                        <div class="step-number">3</div>
+                        <h3>Analiza y optimiza</h3>
+                        <p>
+                            Sigue KPIs en tiempo real, detecta desviaciones y realiza ajustes sobre la marcha
+                            para mejorar conversión y ROI.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Casos de uso -->
+        <section id="casos-uso" class="section">
+            <div class="container">
+                <header class="section-header">
+                    <h2>Casos de uso</h2>
+                    <p>Aplica pagos móviles a distintos modelos de negocio desde una única plataforma.</p>
+                </header>
+                <div class="grid-3 use-cases-grid">
+                    <article class="card card-use-case reveal">
+                        <div>
+                            <h3>Campañas de pago por SMS</h3>
+                            <p>
+                                Activa concursos, votaciones y promociones donde el usuario paga enviando un SMS.
+                                Ideal para TV, radio y eventos en directo.
+                            </p>
+                        </div>
+                        <button class="link-button" type="button">Ver ejemplo</button>
+                    </article>
+                    <article class="card card-use-case reveal">
+                        <div>
+                            <h3>Suscripciones a contenido digital</h3>
+                            <p>
+                                Monetiza contenidos premium (música, vídeo, juegos, noticias)
+                                con pagos recurrentes asociados a la factura del operador.
+                            </p>
+                        </div>
+                        <button class="link-button" type="button">Ver ejemplo</button>
+                    </article>
+                    <article class="card card-use-case reveal">
+                        <div>
+                            <h3>Recargas y micro-pagos in-app</h3>
+                            <p>
+                                Ofrece compras dentro de tu app sin necesidad de tarjeta,
+                                integrando el cobro en la factura telefónica del usuario.
+                            </p>
+                        </div>
+                        <button class="link-button" type="button">Ver ejemplo</button>
+                    </article>
+                    <article class="card card-use-case reveal">
+                        <div>
+                            <h3>Donaciones y aportaciones solidarias</h3>
+                            <p>
+                                Facilita donaciones puntuales o periódicas vía móvil, con un flujo simple y sin fricción.
+                            </p>
+                        </div>
+                        <button class="link-button" type="button">Ver ejemplo</button>
+                    </article>
+                    <article class="card card-use-case reveal">
+                        <div>
+                            <h3>Suscripción a alertas y servicios</h3>
+                            <p>
+                                Envía alertas, informes o consejos personalizados con suscripción vía pago móvil.
+                            </p>
+                        </div>
+                        <button class="link-button" type="button">Ver ejemplo</button>
+                    </article>
+                    <article class="card card-use-case reveal">
+                        <div>
+                            <h3>Votaciones en tiempo real</h3>
+                            <p>
+                                Permite que tu audiencia vote y pague en tiempo real en galas, programas o eventos.
+                            </p>
+                        </div>
+                        <button class="link-button" type="button">Ver ejemplo</button>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Para equipos de marketing -->
+        <section id="para-marketing" class="section section-alt">
+            <div class="container marketing-grid">
+                <div class="marketing-copy reveal">
+                    <header class="section-header align-left">
+                        <h2>Pensado para equipos de marketing</h2>
+                        <p>
+                            Una herramienta con la profundidad técnica necesaria,
+                            pero con una interfaz y un lenguaje que cualquier equipo de marketing puede usar.
+                        </p>
+                    </header>
+                    <ul class="feature-list">
+                        <li>Vista por campaña, país, operadora y dispositivo.</li>
+                        <li>Filtros rápidos para analizar rendimientos por segmento.</li>
+                        <li>Informes exportables para compartir con negocio y dirección.</li>
+                        <li>Histórico de cambios y versiones de campaña.</li>
+                        <li>Alertas básicas cuando un KPI se sale de rango.</li>
+                    </ul>
+                </div>
+                <div class="marketing-visual reveal">
+                    <div class="dashboard-preview">
+                        <div class="dashboard-header">
+                            <span>Campañas activas</span>
+                            <span class="dashboard-tag">En tiempo real</span>
+                        </div>
+                        <div class="dashboard-body">
+                            <div class="dashboard-row">
+                                <span class="dashboard-label">Campaña SMS España</span>
+                                <span class="dashboard-value">2,8% conv.</span>
+                            </div>
+                            <div class="dashboard-row">
+                                <span class="dashboard-label">Suscripción vídeo LATAM</span>
+                                <span class="dashboard-value">3,4% conv.</span>
+                            </div>
+                            <div class="dashboard-row">
+                                <span class="dashboard-label">Recargas gaming FR</span>
+                                <span class="dashboard-value">4,1% conv.</span>
+                            </div>
+                            <div class="dashboard-row">
+                                <span class="dashboard-label">Donaciones TV live</span>
+                                <span class="dashboard-value">2,1% conv.</span>
+                            </div>
+                        </div>
+                        <p class="dashboard-caption">Controla tus campañas de un vistazo y actúa rápido.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Planes -->
+        <section id="planes" class="section">
+            <div class="container">
+                <header class="section-header">
+                    <h2>Planes adaptados a tu volumen</h2>
+                    <p>Empieza con un mercado y escala progresivamente sin cambiar de plataforma.</p>
+                </header>
+                <div class="plans-grid">
+                    <article class="plan-card reveal">
+                        <h3>Starter</h3>
+                        <p class="plan-tagline">Para pilotos y pruebas controladas.</p>
+                        <ul class="plan-features">
+                            <li>Hasta 2 países</li>
+                            <li>Campañas básicas de pago puntual</li>
+                            <li>Informes mensuales</li>
+                            <li>Soporte por email</li>
+                        </ul>
+                        <a href="#contacto" class="btn btn-outline">Solicitar información</a>
+                    </article>
+                    <article class="plan-card plan-card-highlight reveal">
+                        <h3>Growth</h3>
+                        <p class="plan-tagline">Para equipos con campañas recurrentes.</p>
+                        <ul class="plan-features">
+                            <li>Hasta 5 países</li>
+                            <li>Campañas de pago y suscripción</li>
+                            <li>Analítica avanzada</li>
+                            <li>Soporte priorizado</li>
+                        </ul>
+                        <a href="#contacto" class="btn btn-primary">Hablar con ventas</a>
+                    </article>
+                    <article class="plan-card reveal">
+                        <h3>Enterprise</h3>
+                        <p class="plan-tagline">Para operaciones internacionales.</p>
+                        <ul class="plan-features">
+                            <li>Multi-país y multi-operadora</li>
+                            <li>Flujos a medida y consultoría</li>
+                            <li>Integraciones personalizadas</li>
+                            <li>Soporte dedicado</li>
+                        </ul>
+                        <a href="#contacto" class="btn btn-outline">Agenda una llamada</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonios -->
+        <section id="testimonios" class="section section-alt">
+            <div class="container">
+                <header class="section-header">
+                    <h2>Lo que dicen otros equipos</h2>
+                    <p>Comentarios ficticios, pero coherentes con el tipo de proyecto y uso de la plataforma.</p>
+                </header>
+                <div class="grid-3 testimonials-grid">
+                    <article class="testimonial-card reveal">
+                        <p class="testimonial-text">
+                            “Centralizamos todas las campañas de pagos móviles en un solo panel.
+                            Ahora podemos lanzar tests en días en lugar de semanas.”
+                        </p>
+                        <p class="testimonial-author">Laura Martín</p>
+                        <p class="testimonial-role">Head of Marketing · MediaConnect</p>
+                    </article>
+                    <article class="testimonial-card reveal">
+                        <p class="testimonial-text">
+                            “El equipo de marketing puede revisar KPIs sin pedir informes al equipo técnico.
+                            Nos ha ahorrado muchas reuniones y correos.”
+                        </p>
+                        <p class="testimonial-author">Javier Ruiz</p>
+                        <p class="testimonial-role">Product Manager · PlayZone</p>
+                    </article>
+                    <article class="testimonial-card reveal">
+                        <p class="testimonial-text">
+                            “La capa de conexión con operadoras ya venía resuelta.
+                            Solo tuvimos que centrarnos en el mensaje y la experiencia de usuario.”
+                        </p>
+                        <p class="testimonial-author">Ana López</p>
+                        <p class="testimonial-role">Digital Manager · StreamPlus</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section id="faq" class="section">
+            <div class="container">
+                <header class="section-header">
+                    <h2>Preguntas frecuentes</h2>
+                    <p>Resolvemos las dudas más habituales antes de hablar con el equipo comercial.</p>
+                </header>
+                <div class="faq-list">
+                    <article class="faq-item reveal">
+                        <button class="faq-question" type="button">
+                            <span>¿Cómo se integra con mi web o app?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>
+                                Trabajamos con APIs y flujos estandarizados.
+                                Tu equipo técnico puede conectar tu web o app mediante endpoints documentados
+                                y ejemplos listos para usar, mientras tú configuras la campaña desde el panel.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="faq-item reveal">
+                        <button class="faq-question" type="button">
+                            <span>¿Qué países y operadoras están disponibles?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>
+                                Disponemos de acuerdos con múltiples operadoras en Europa y Latinoamérica.
+                                En la demo revisamos contigo los países prioritarios y las opciones de despliegue.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="faq-item reveal">
+                        <button class="faq-question" type="button">
+                            <span>¿Qué pasa con la seguridad y el cumplimiento normativo?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>
+                                Aplicamos medidas de seguridad alineadas con las normativas de cada país
+                                y trabajamos con partners especializados en pagos móviles y antifraude.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="faq-item reveal">
+                        <button class="faq-question" type="button">
+                            <span>¿En cuánto tiempo puedo lanzar mi primera campaña?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>
+                                Si los países y operadoras están ya disponibles,
+                                puedes lanzar un piloto en cuestión de días, una vez definidos el flujo y los mensajes.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="faq-item reveal">
+                        <button class="faq-question" type="button">
+                            <span>¿Qué tipo de soporte ofrecéis?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>
+                                Contarás con un equipo de soporte que entiende tanto de pagos como de marketing.
+                                Durante el lanzamiento tendrás acompañamiento cercano para ajustar la campaña.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA final / Contacto -->
+        <section id="contacto" class="section section-alt">
+            <div class="container contact-grid">
+                <div class="contact-copy reveal">
+                    <header class="section-header align-left">
+                        <h2>Prepara tu próxima campaña de pagos móviles</h2>
+                        <p>
+                            Cuéntanos brevemente qué tipo de servicio quieres monetizar y revisamos contigo
+                            las opciones de despliegue, países y operadoras.
+                        </p>
+                    </header>
+                    <ul class="contact-points">
+                        <li>Revisión sin compromiso de tu caso de uso.</li>
+                        <li>Estimación inicial de tiempos y países disponibles.</li>
+                        <li>Propuesta de siguientes pasos adaptada a tu equipo.</li>
+                    </ul>
+                </div>
+                <div class="contact-form-wrapper reveal">
+                    <form class="contact-form" action="#" method="post">
+                        <div class="form-group">
+                            <label for="nombre">Nombre completo</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Correo corporativo</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="empresa">Empresa</label>
+                            <input type="text" id="empresa" name="empresa">
+                        </div>
+                        <div class="form-group">
+                            <label for="volumen">Volumen aproximado de usuarios</label>
+                            <select id="volumen" name="volumen">
+                                <option value="">Selecciona una opción</option>
+                                <option value="menos-50k">Hasta 50.000</option>
+                                <option value="50k-250k">50.000 - 250.000</option>
+                                <option value="250k-1m">250.000 - 1 millón</option>
+                                <option value="mas-1m">Más de 1 millón</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="mensaje">Cuéntanos brevemente tu caso</label>
+                            <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Enviar y solicitar demo</button>
+                        <p class="form-note">
+                            No enviaremos spam. Usaremos tus datos solo para responder a esta solicitud.
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer" class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="#hero" class="logo footer-logo">
+                    <span class="logo-mark">MP</span>
+                    <span class="logo-text">MobilePay Campaign</span>
+                </a>
+                <p class="footer-text">
+                    Plataforma ficticia de pagos móviles. Esta web muestra un ejemplo de diseño y maquetación
+                    para un proyecto simulado orientado a equipos de marketing y producto.
+                </p>
+            </div>
+            <div class="footer-links">
+                <h3>Producto</h3>
+                <ul>
+                    <li><a href="#beneficios">Beneficios</a></li>
+                    <li><a href="#casos-uso">Casos de uso</a></li>
+                    <li><a href="#planes">Planes</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="#">Aviso legal</a></li>
+                    <li><a href="#">Política de privacidad</a></li>
+                    <li><a href="#">Cookies</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>Redes</h3>
+                <ul>
+                    <li><a href="#">LinkedIn</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">YouTube</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container footer-bottom-content">
+                <p>© 2025 MobilePay Campaign. Ejemplo de web de un proyecto simulado de pagos móviles.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

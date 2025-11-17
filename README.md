@@ -1,3 +1,7 @@
+
+Te dejo el README completo ya corregido para que puedas pegarlo entero si quieres:
+
+```markdown
 # MobilePay Campaign – Landing de pagos móviles (proyecto simulado)
 
 ![Captura de la landing MobilePay Campaign](./screenshot-mobilepay-hero-desktop.png)
@@ -111,4 +115,3 @@ cd mobilepay-campaign-landing
 
 # Abrir index.html en el navegador
 # (doble clic o usando un servidor estático tipo Live Server de VS Code)
-

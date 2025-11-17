@@ -1041,6 +1041,11 @@ textarea:focus-visible {
     background: radial-gradient(circle at 30% 30%, #f9fafb 0, #6366f1 40%, #22c1c3 100%);
 }
 
+/* Logo en el footer con texto claro para que contraste sobre el fondo oscuro */
+.site-footer .logo-text {
+    color: #e5e7eb;
+}
+
 .footer-text {
     margin-top: 1rem;
     font-size: 0.88rem;

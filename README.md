@@ -1,7 +1,3 @@
-
-Te dejo el README completo ya corregido para que puedas pegarlo entero si quieres:
-
-```markdown
 # MobilePay Campaign – Landing de pagos móviles (proyecto simulado)
 
 ![Captura de la landing MobilePay Campaign](./screenshot-mobilepay-hero-desktop.png)
